@@ -25,13 +25,22 @@ const localizer = dateFnsLocalizer({
 });
 
 export default function CalendarView() {
-  const [events, setEvents] = useState<CalendarEvent[]>([]);
+  const [events, setEvents] = useState<CalendarEvent[]>([
+    {
+      id: "1",
+      title: "Test Event",
+      start: new Date(),
+      end: new Date(Date.now() + 60 * 60 * 1000),
+    },
+  ]);
 
   return (
     <div style={{ height: "80vh" }}>
       <Calendar
         localizer={localizer}
         events={events}
+        style={{ height: "80vh" }}
+        defaultView="week"
         startAccessor="start"
         endAccessor="end"
         onSelectEvent={(event) => console.log(event)}
