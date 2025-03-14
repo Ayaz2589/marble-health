@@ -1,15 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { format, parse, startOfWeek, getDay } from "date-fns";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-interface CalendarEvent {
+export interface CalendarEvent {
   id?: string;
   title: string;
   start: Date;
   end: Date;
+}
+
+interface CalendarViewProps {
+  events: CalendarEvent[];
 }
 
 const locales = {
@@ -24,16 +28,7 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-export default function CalendarView() {
-  const [events, setEvents] = useState<CalendarEvent[]>([
-    {
-      id: "1",
-      title: "Test Event",
-      start: new Date(),
-      end: new Date(Date.now() + 60 * 60 * 1000),
-    },
-  ]);
-
+export default function CalendarView({ events }: CalendarViewProps) {
   return (
     <div style={{ height: "80vh" }}>
       <Calendar
