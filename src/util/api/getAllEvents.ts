@@ -1,5 +1,3 @@
-// src/util/api/getAllEvents.ts
-
 export interface CalendarEvent {
   id: string;
   title: string;
@@ -9,7 +7,6 @@ export interface CalendarEvent {
 }
 
 const getAllEvents = async (): Promise<CalendarEvent[]> => {
-  // Use an environment variable for the base URL or fallback to localhost.
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const response = await fetch(`${baseUrl}/api/events`, {
     method: "GET",

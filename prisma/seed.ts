@@ -42,14 +42,12 @@ async function main() {
     },
     {
       title: 'Event 2 (Wednesday 2-3 PM)',
-      // Monday + 2 days => Wednesday
       start: new Date(monday.getTime() + 2 * 24 * 60 * 60 * 1000 + 14 * 60 * 60 * 1000),
       end: new Date(monday.getTime() + 2 * 24 * 60 * 60 * 1000 + 15 * 60 * 60 * 1000),
       userId: user.id,
     },
     {
       title: 'Event 3 (Thursday 1-2 PM)',
-      // Monday + 3 days => Thursday
       start: new Date(monday.getTime() + 3 * 24 * 60 * 60 * 1000 + 13 * 60 * 60 * 1000),
       end: new Date(monday.getTime() + 3 * 24 * 60 * 60 * 1000 + 14 * 60 * 60 * 1000),
       userId: user.id,
