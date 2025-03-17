@@ -1,6 +1,6 @@
-# Marble Health Take Home Assessment
+# Marble Health
 
-This project was built as a take-home assessment to demonstrate independent problem-solving and full-stack integration skills. The application uses Next.js (App Router) for the frontend, Prisma ORM for database interactions, and a Postgres database (running in Docker) for data storage. The project also leverages Material UI and react-big-calendar for a polished scheduling interface.
+This project was built as an assessment to demonstrate independent problem-solving and full-stack integration skills. The application uses Next.js (App Router) for the frontend, Prisma ORM for database interactions, and a Postgres database (running in Docker) for data storage. The project also leverages Material UI and react-big-calendar for a polished scheduling interface.
 
 ## Features
 
