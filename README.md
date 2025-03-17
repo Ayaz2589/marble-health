@@ -1,6 +1,6 @@
 # Marble Health Take Home Assessment
 
-This project is a full-stack scheduling tool for therapists. It was built as a take-home assessment to demonstrate independent problem-solving and full-stack integration skills. The application uses Next.js (App Router) for the frontend, Prisma ORM for database interactions, and a Postgres database (running in Docker) for data storage. The project also leverages Material UI and react-big-calendar for a polished scheduling interface.
+This project was built as a take-home assessment to demonstrate independent problem-solving and full-stack integration skills. The application uses Next.js (App Router) for the frontend, Prisma ORM for database interactions, and a Postgres database (running in Docker) for data storage. The project also leverages Material UI and react-big-calendar for a polished scheduling interface.
 
 ## Features
 
@@ -57,7 +57,7 @@ This project is a full-stack scheduling tool for therapists. It was built as a t
 
 - **Start The DB on docker:**
 ```bash
-  docker compose up -d
+  docker compose down -v && docker compose up -d --build
 ```
 
 ## Database & Seeding
